@@ -1,19 +1,22 @@
 using System;
 
-namespace random
+namespace RandomGen
 {
-    class program 
-    {
-       Public static void Main(string[], args)
-       {
-          Random _random = new Random();  
+    public class Program
+    { 
+       public static void Main(string[] args)
+        {
+          Program pr = new Program();  
+          
+          for(int i = 0; i <= 10; i++) 
+            Console.WriteLine(pr.RandomNumber(5, 8)); 
 
-          public int RandomNumber(int min, int max)  
-          {  
-               return _random.Next(min, max);  
-          } 
-           
-          Console.WriteLine(RandomNumber(8, 5)); 
+          Console.ReadKey();
         }
+        private readonly Random _random = new Random();  
+       
+        public int RandomNumber(int min, int max)  
+        {  
+            return _random.Next(min, max);  
+        }  
     }
-}
