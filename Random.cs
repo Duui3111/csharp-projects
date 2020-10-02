@@ -4,7 +4,7 @@ namespace random
 {
     class program 
     {
-       Public static void(string[], args)
+       Public static void Main(string[], args)
        {
           Random _random = new Random();  
 
