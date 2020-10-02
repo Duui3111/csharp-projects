@@ -15,5 +15,5 @@ namespace random
            
           Console.WriteLine(RandomNumber(8, 5)); 
         }
-     }
+    }
 }
