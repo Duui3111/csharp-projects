@@ -15,12 +15,9 @@ namespace Calculator
 
             string operation = input.Split(" ")[1];
 
-            if(operation == "+") Console.WriteLine($"result: " + (num1 + num2));
-        
-            else if(operation == "/") Console.WriteLine($"result: " + (num1 / num2));
-                   
-            else if(operation == "*") Console.WriteLine($"result: " + (num1 * num2));
-                    
+            if(operation == "+") Console.WriteLine($"result: " + (num1 + num2));       
+            else if(operation == "/") Console.WriteLine($"result: " + (num1 / num2));                
+            else if(operation == "*") Console.WriteLine($"result: " + (num1 * num2));                 
             else if(operation == "-") Console.WriteLine($"result: " + (num1 - num2));
             
             Console.ReadKey();
